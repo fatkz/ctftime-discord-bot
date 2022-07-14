@@ -1,15 +1,8 @@
 from multiprocessing import context
-from sqlite3 import Timestamp
-from time import sleep
 from turtle import st
-from unittest import skip
 import discord
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
-import re
-import pytz
-import time
 
 
 
