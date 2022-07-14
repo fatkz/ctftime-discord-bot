@@ -88,11 +88,9 @@ async def on_message(message):
                 ctf_link = str(ctf_link)+"favicon.ico"
                 ctf_users = jdata[i]['participants']
                 ctf_time = ctf_time[0:10]
-
-                a = get_img(ctf_url)
-                print(a)
+                
                 embed=discord.Embed(title=f"{ctf_name}", url=f"{ctf_url}", color=0x36f410)
-                embed.set_thumbnail(url=f"{a}")
+                embed.set_thumbnail(url="https://ctftime.org"+get_img(ctf_url))
                 embed.add_field(name="TIME", value=f"{ctf_time}", inline=True)
                 embed.add_field(name="TYPE", value=f"{ctf_date}", inline=True)
                 embed.add_field(name="PARTICIPANTS", value=f"{ctf_users}", inline=True)
